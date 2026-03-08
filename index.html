@@ -26,30 +26,42 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body class="min-h-screen max-w-[520px] pt-[78.5px] bg-[#fff] mx-auto">
 
+<body class="min-h-screen max-w-[520px] pt-[78.5px] pb-[78.5px] bg-[#fff] mx-auto">
 
-  <div class="card bg-base-100 w-full shrink-0 shadow">
+ <div class="card bg-base-100 w-full h-[743px] shrink-0 shadow">
     <div class="form-body space-y-6 w-[520px] mx-auto pt-8  grid place-items-center ">
 
       <img src="./assets/github-logo.png" alt="">
-        <div>
-          <h1 class=" text-[24px] font-semibold text-[#1F2937] text-center">GitHub Issues Tracker</h1>
-          <p class="text-[16px] font-normal text-[#64748B] text-center">Sign in to manage your issues</p>
-        </div>
-      
-     <fieldset class="fieldset w-[80%] rounded-lg p-4">
-          <label class="label text-[16px] font-medium text-[#1F2937]  ">Username</label>
-          <input id="input-username" maxlength="5" minlength="5" type="text" class="input w-[456px]" placeholder="Enter Username" />
-          <p class="text-[14px] font-normal text-[#4A00FF]">Default: admin</p>
+      <div>
+        <h1 class=" text-[24px] font-semibold text-[#1F2937] text-center">GitHub Issues Tracker</h1>
+        <p class="text-[16px] font-normal text-[#64748B] text-center">Sign in to manage your issues</p>
+      </div>
+      <fieldset class="fieldset w-[80%] rounded-lg p-4">
+        <label class="label text-[16px] font-medium text-[#1F2937]  ">Username</label>
+        <input id="input-username" maxlength="5" minlength="5" type="text" class="input w-[456px]"
+          placeholder="Enter Username" />
+        <p class="text-[14px] font-normal text-[#4A00FF]">Default: admin</p>
 
-          <label class="label text-[16px] font-medium text-[#1F2937]">Password</label>
-          <input id="input-password" maxlength="8" minlength="8" type="password" class="input w-[456px]" placeholder="Enter Password" />
-          <p class="text-[14px] font-normal text-[#4A00FF]">Default: admin123</p>
-          
-          <button id="signin-btn" class="btn btn-primary mt-4">Sign In</button>
+        <label class="label text-[16px] font-medium text-[#1F2937]">Password</label>
+        <input id="input-password" maxlength="8" minlength="8" type="password" class="input w-[456px]"
+          placeholder="Enter Password" />
+        <p class="text-[14px] font-normal text-[#4A00FF]">Default: admin123</p>
+
+        <button id="signin-btn" class="btn btn-primary mt-4">Sign In</button>
       </fieldset>
-     
+      <div class="flex justify-between">
+        <hr>
+        <p>OR</p>
+        <hr>
+      </div>
+      <div>
+        <p class="text-[14px] font-normal text-[#64748B] text-center">Demo Credentials:</p>
+      <p class=" h-[90px] w-[456px] mx-auto bg-[#f8fafc] text-center p-6 pb-8"><span class="text-[16px] font-semibold">Username:</span>
+        admin <br> <span class="text-[16px] font-semibold">Password:</span> admin123
+      </p>
+      </div>
+
     </div>
   </div>
 
