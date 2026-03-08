@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Github Issue Tracker</title>
+
+  <!-- daisyUI and Tailwind -->
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+  <!-- font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      font-family: "Geist", sans-serif;
+    }
+  </style>
+  <!-- icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="min-h-screen max-w-[520px] pt-[78.5px] bg-[#fff] mx-auto">
+
+
+  <div class="card bg-base-100 w-full shrink-0 shadow">
+    <div class="form-body space-y-6 w-[520px] mx-auto pt-8  grid place-items-center ">
+
+      <img src="./assets/github-logo.png" alt="">
+        <div>
+          <h1 class=" text-[24px] font-semibold text-[#1F2937] text-center">GitHub Issues Tracker</h1>
+          <p class="text-[16px] font-normal text-[#64748B] text-center">Sign in to manage your issues</p>
+        </div>
+      
+     <fieldset class="fieldset w-[80%] rounded-lg p-4">
+          <label class="label text-[16px] font-medium text-[#1F2937]  ">Username</label>
+          <input id="input-username" maxlength="5" minlength="5" type="text" class="input w-[456px]" placeholder="Enter Username" />
+          <p class="text-[14px] font-normal text-[#4A00FF]">Default: admin</p>
+
+          <label class="label text-[16px] font-medium text-[#1F2937]">Password</label>
+          <input id="input-password" maxlength="8" minlength="8" type="password" class="input w-[456px]" placeholder="Enter Password" />
+          <p class="text-[14px] font-normal text-[#4A00FF]">Default: admin123</p>
+          
+          <button id="signin-btn" class="btn btn-primary mt-4">Sign In</button>
+      </fieldset>
+     
+    </div>
+  </div>
+
+
+  <script src="./script.js"></script>
+</body>
+
+</html>
